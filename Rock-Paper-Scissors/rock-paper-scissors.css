@@ -1,0 +1,166 @@
+@font-face {
+	font-family:Dominique;
+	src: url(Dominique.otf);
+}
+body {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #FAFAFA;
+	font-family: Dominique;
+	color: darkslateblue;
+}
+div.choices{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 450px;
+	float: none;
+	display: block;
+	margin: 0 auto;
+	
+}
+#title {
+	width: 89&;
+	font-size: 120px;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	border: 3px dotted darkslateblue;
+	box-shadow: 0px 0px 20px lightgray;
+
+}
+button {
+	width: 100px;
+	height: 100px;
+	margin-right: 25px;
+	margin-left: 25px;
+	background-color: Snow;
+	box-shadow: 5px 5px 3px lightgray;
+	border: none;
+	cursor: pointer;
+}
+button:focus {
+	outline: 0;
+}
+img {
+	border: 0px solid black;
+	border-radius: 200px;
+	box-shadow: 2px 2px 6px gray;
+	vertical-align: middle;
+}
+#playField {
+	text-align: center;
+	font-size: 100px;
+	width: 1000px;
+	float: none;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	vertical-align: middle;
+	padding-top: 15px;
+}
+#playfieldText {
+	vertical-align: middle;
+	padding: 0px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+@keyframes colorChange {
+	0% { 
+		border: 1px solid black;
+	}
+	100% {
+		border: 1px solid black;
+	}
+}
+#rock {
+	background-image: url(rock.png);
+	background-repeat: no-repeat;
+	background-size: 90px 90px;
+	background-position: center center;
+	
+	animation-name: colorChange;
+	animation-delay: .5s;
+	animation-duration: .5s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+button:hover {
+	border: 1px solid teal;
+}
+button:disabled:hover{
+	border: none;
+	cursor: default;
+}
+#paper {
+	background-image: url(paper.png);
+	background-repeat: no-repeat;
+	background-size: 90px 90px;
+	background-position: center center;
+	
+	animation-name: colorChange;
+	animation-delay: 1s;
+	animation-duration: .5s;
+	animation-timing-function: ease-in-out;
+}
+#scissors {
+	background-image: url(scissors.png);
+	background-repeat: no-repeat;
+	background-size: 90px 90px;
+	background-position: center center;
+	
+	animation-name: colorChange;
+	animation-delay: 1.5s;
+	animation-duration: .5s;
+	animation-timing-function: ease-in-out;
+}
+#notif {
+	margin: 20px auto;
+	text-align: center;
+	width: 1000px;
+	font-size: 20px;
+	animation-name: springy-text;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: backwards;
+}
+@keyframes springy-text {
+  0% {
+    letter-spacing:1.0em;
+    color: thistle;
+  }
+  100%   {
+    letter-spacing:0.1em;
+    color: darkslateblue;
+  }
+}
+
+@keyframes airoll {
+  0% {
+    background-image: url(round-rock.png);
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center center;
+  }
+  50% {
+	background-image: url(round-paper.png);
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center center;
+  }
+  100%   {
+    background-image: url(round-scissors.png);
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: center center;
+  }
+}
+.roll {
+	animation-name: airoll;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
