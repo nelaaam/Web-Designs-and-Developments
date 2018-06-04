@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" href = "login.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body onload = slide("")>
+		<div id = "infocontainer">
+			<div id = "left">
+				<p id = "loginh"> LOGIN </p>
+				<form method = "post" action = "login.php" id = "logform">
+					<div class = "userinput">
+						<input class = "textinput" type = "text" placeholder = "Username" maxlength = "20" id = "ulog" name = "uname">
+						<input class = "textinput" type = "password" placeholder = "Password" maxlength = "20" id = "plog" name = "pass">
+					</div>
+					<input class = "button" type = "submit" id = "signin" name = "log" value = "Sign In">
+				</form>
+			</div>
+			<div id = "right">
+				<p id = "registerh"> REGISTER </p>
+				<form class = "form-group" method = "post" action = "register.php" id = "regform">
+					<div class = "userinput" id = "loginInfo">
+					<label>Login Information:</label>
+						<input class = "textinput" type = "text" placeholder = "Username" maxlength = "20" id = "uname" name = "uname" required>
+						<input class = "textinput" type = "password" placeholder = "Password" maxlength = "20" id = "pass" name = "pass" required> 
+					</div>
+					<div class = "userinput" id = "personalInfo1">
+					<label>Personal Information 1/2: </label>
+						<input class = "textinput" type = "text" placeholder = "First Name" maxlength = "20" id = "fname" name = "fname" required> 
+						<input class = "textinput" type = "text" placeholder = "Middle Name" maxlength = "20" id = "mname" name = "mname" required> 
+						<input class = "textinput" type = "text" placeholder = "Last Name" maxlength = "20" id = "lname" name = "lname" required>
+					</div>
+					<div class = "userinput" id = "personalInfo2">
+					<label>Personal Information 2/2: </label>
+						<input class = "textinput" type = "text" placeholder = "Gender" maxlength = "20" id = "gender" name = "gender" required>
+						<input class = "textinput" type = "text" placeholder = "Age" maxlength = "20" id = "age" name = "age" required>
+					</div>
+					<div class = "userinput" id = "workInfo">
+					<label>Work Information 1/2: </label>
+						<input class = "textinput" type = "text" placeholder = "Position" maxlength = "20" id = "posit" name = "posit" required>
+						<input class = "textinput" type = "text" placeholder = "Company" maxlength = "20" id = "comp" name = "comp" required>
+						
+					</div>
+					<div class = "userinput" id = "workInfo2">
+						<label>Work Information 2/2: </label><br><br>
+						Expected Salary: <label id = "es"> </label>
+						<input class = "rangeinput" type = "range"  min = "0" max = "300000" id = "salary" name = "salary" value = "" required>
+						Years of Experience: <label id = "years"> </label>
+						<input class = "rangeinput" type = "range"  min = "0" max = "10" id = "yoe" name = "yoe" value = "" required>
+					</div>
+					<button class = "button" type = "button" id = "back" onclick = nextpage(0) value = "zero"><i class = "fa fa-chevron-left"></i> </button>
+					<input class = "button" type = "submit" id = "submit" value = "Submit">
+					<button class = "button" type = "button" id = "next" onclick = nextpage(1) value = "one"><i class = "fa fa-chevron-right"></i> </button>
+				</form>
+				
+			</div>
+		</div>
+		<div id = "slidercontainer">
+		<div id = "overlay">
+		</div>
+			<div id = "star">
+				<svg width = "250" height = "250">
+					<polygon points = "125,10 50,235 245,95 5,95 200,235" style = "fill: white; stroke: black; stroke-width: 1; fill-rule:evenodd;" /> 
+					<polygon points = "125,135 125,10 95,95" style = "fill: white; stroke: green; stroke-width: 1; fill-rule:evenodd;" /> 
+					<polygon points = "125,135 5,95 95,95" style = "fill: green; stroke: green; stroke-width: 1; fill-rule:evenodd;" /> 
+					<polygon points = "125,135 5,95 75,150" style = "fill: white; stroke: green; stroke-width: 1; fill-rule:evenodd;" />
+					<polygon points = "125,135 50,235 75,150" style = "fill: green; stroke: green; stroke-width: 1; fill-rule:evenodd;" />
+					<polygon points = "125,135 50,235 125,185" style = "fill: white; stroke: green; stroke-width: 1; fill-rule:evenodd;" />
+					<polygon points = "125,135 200,235 125,185" style = "fill: green; stroke: green; stroke-width: 1; fill-rule:evenodd;" />
+					<polygon points = "125,135 200,235 175,150" style = "fill: white; stroke: green; stroke-width: 1; fill-rule:evenodd;" />
+					<polygon points = "125,135 245,95 175,150" style = "fill: green; stroke: green; stroke-width: 1; fill-rule:evenodd;" />
+					<polygon points = "125,135 245,95 155,95" style = "fill: white; stroke: green; stroke-width: 1; fill-rule:evenodd;" />
+					<polygon points = "125,135 125,10 155,95" style = "fill: green; stroke: green; stroke-width: 1; fill-rule:evenodd;" />
+				</svg>
+			</div>
+			<div id = "dlsud">
+				<h1> De La Salle University Dasmarinas </h1>
+			</div>
+			<div id = "sliderinfo">
+				<text id = "question"> Not yet registered? </text>
+				<text id = "subtitle"> Sign up now to discover great opportunities. </text>
+				<button class = "button" type = "reset" id = "startbutton" > Create An Account </button>
+			</div>
+		</div>
+		
+		<script src = "login.js"></script>
+	<body>
+	
+</html>

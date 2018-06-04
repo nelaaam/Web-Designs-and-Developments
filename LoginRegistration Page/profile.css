@@ -1,0 +1,99 @@
+@font-face {
+	font-family: Gidole;
+	font-style: regular;
+	src: url(Gidole-Regular.otf);
+}
+@font-face {
+	font-family: TimesSanSerif;
+	font-style: regular;
+	src: url(TimesSanSerif.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-image: url("bnw.jpg");
+	background-repeat: none;
+	height: 100vh;
+	max-width: 100%;
+	max-height: 100%;
+	font-family: Gidole;
+}
+#infoBox{
+	top: 10%;
+	right: 0;
+	bottom: 0;
+	left: 30%;
+	position: absolute;
+	max-width: 60%;
+	max-height: 70%;
+}
+#dpContainer {
+	top: 10%;
+	right: 0;
+	bottom: 0;
+	left: 5%;
+	position: absolute;
+	text-align: center;
+	width: 20%;
+	height: 40%;
+}
+.container{
+	background-color:white;
+	border-radius: 15px;
+	opacity:0.8;
+	overflow: hidden;
+}
+
+#dp {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: relative;
+	float: none;
+	margin-top: 30px;
+	width: 200px;
+	height: 200px;
+}
+
+.label {
+	letter-spacing:2px;
+	margin-left: 50px;
+	margin-top: 20px;
+	font-size: 15px;
+}
+.h1{
+	font-size: 15px;
+	margin:30px 0px 0px 20px;
+	letter-spacing:3px;
+}
+.backButton{
+	border-radius: 5px;
+	background-color: white;
+	height: 5%;
+	width: 10%;
+	text-align: center;
+	line-height: 200%;
+	position: absolute;
+	float:left;
+   	margin: 40% 0% 0% 55%;
+	opacity: 0.8;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:link{
+	color:black;
+	text-decoration: none;
+}
+a:visited{
+	color:black;
+	text-decoration: none;
+}
+.backButton:hover{
+	background-color: #D3D3D3;
+	
+}
+a:active{
+}
