@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel = "stylesheet" href = "dashboard_content.css">
+  </head>
+  <body>
+	<div class = "content">	
+	  <div class="grid-container">
+	    <div class="item1">
+	      <label class = "display-header">Current Consumption</label> 
+	      <span> <a href = "#"> <i class="fa fa-cog" style="font-size:20px; color: gray;"></i> </a> </span>
+	      <br>
+		  <div class = "meter-display">
+		    <div class="c100 p50 big blue">
+			<span>50%</span>
+			  <div class="slice">
+				<div class="bar"></div>
+				<div class="fill"></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="item2">
+		  <label class="display-header">Device Status</label> <br>
+					<div class="display-text" id="devstat">
+						ONLINE
+					</div>
+				</div>
+				<div class="item3">
+					<label class = "display-header">Consumption Cost</label> <br>
+					<div class = "display-text" id="est-cost">
+						PHP 10,035.67
+					</div>
+					<p class = "sub-display">Estimated Cost For This Session</p>
+					<p class = "sub-display" id="rate">@ PHP 32.00 kW/H</p>
+				</div>  
+				<div class="item4">
+					<label class="display-header">Recent Activity</label> 
+					<span> <a href = "#"> <i class="fa fa-cog" style="font-size:20px; color: gray;"></i> </a> </span>
+					<br>
+					<div class = "activities-display">
+						<table id = "recent1">
+							<tr id = "header">
+								<th> Log </th>
+								<th> Status </th>
+								<th> Duration </th>
+							</tr>
+							<tr id = "slot1">
+								<td> 4 </td>
+								<td> Online </td>
+								<td> 4 mins </td>
+							</tr>
+							<tr id = "slot2">
+								<td> 3 </td>
+								<td> Offline </td>
+								<td> 12 hours </td>
+							</tr>
+							<tr id = "slot3">
+								<td> 2 </td>
+								<td> Online </td>
+								<td> 1 hour </td>
+							</tr>
+							<tr id = "slot4">
+								<td> 1 </td>
+								<td> Online </td>
+								<td> 8 mins </td>
+							</tr>
+							<tr id = "slot4">
+								<td> 1 </td>
+								<td> Online </td>
+								<td> 8 mins </td>
+							</tr>
+							<tr id = "slot4">
+								<td> 1 </td>
+								<td> Online </td>
+								<td> 8 mins </td>
+							</tr>
+							<tr id = "slot4">
+								<td> 1 </td>
+								<td> Online </td>
+								<td> 8 mins </td>
+							</tr>
+							<tr id = "slot4">
+								<td> 1 </td>
+								<td> Online </td>
+								<td> 8 mins </td>
+								</tr>
+							<tr id = "slot4">
+								<td> 1 </td>
+								<td> Online </td>
+								<td> 8 mins </td>
+							</tr>
+							<tr id = "slot4">
+								<td> 1 </td>
+								<td> Online </td>
+								<td> 8 mins </td>	
+							</tr>
+						</table>
+						<a href = "#"> <p id = "links">View All Device Activities</p></a>
+					</div>
+				</div>
+				<div class="item6">
+				<label class = "display-header">Current Consumption</label>
+				<span> <a href = "#"> <i class="fa fa-cog" style="font-size:20px; color: gray;"></i> </a> </span>
+				<br>
+					<div class = "meter-display">
+						<div class="c100 p50 big blue">
+							<span>50%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item7">
+					<label class = "display-header"> DEVICE STATUS </label> <br>
+					<div class = "display-text" id = "devstat">
+						ONLINE
+					</div>
+				</div>
+				<div class="item8">
+					<label class = "display-header"> CONSUMPTION COST </label> <br> 
+					<div class = "display-text" id = "est-cost">
+						PHP 10,035.67
+					</div>
+					<p class = "sub-display"> ESTIMATED COST FOR THIS SESSION </p>
+					<p class = "sub-display"> @ PHP 32.00 kW/H </p>
+				</div>  
+				<div class="item9">
+					<label class = "display-header"> RECENT ACTIVITES </label> 
+					<span> <a href = "#"> <i class="fa fa-cog" style="font-size:20px; color: gray;"></i> </a> </span>
+					<br>
+					<div class = "activities-display">
+						<h6> No activities yet. </h6>
+					</div>
+				</div>
+			</div>
+		<script src = "dashboard.js"></script> 
+    </div>
+	</body>
+</html>
